@@ -4,9 +4,9 @@ A Chrome extension that scrobbles YouTube Music plays to your own server, includ
 
 ## Why?
 
-- YouTube Music history dedupes repeat plays
-- Google Takeout data is incomplete
+- YouTube Music stats/history is in the ice age compared to all other providers (Spotify, Apple Music, etc)
 - No official scrobbling API
+- Incompatible with Last.fm 
 
 This extension solves all three by detecting plays directly in the browser via `video.currentTime`.
 

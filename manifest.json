@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YTMusic Scrobbler",
+  "version": "1.1",
+  "description": "Scrobbles YouTube Music plays to personal dashboard",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "*://music.youtube.com/*",
+    "https://instance-20260128-1952.tail3f881b.ts.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://music.youtube.com/*"],
+      "js": ["scrobbler.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
